@@ -23,23 +23,23 @@
             android:contentDescription="Back"
             android:layout_marginBottom="16dp" />
 
-        <!-- Header Card -->
+        <!-- Header Card - FIXED SIZE -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="180dp"
             android:layout_marginBottom="16dp"
             app:cardCornerRadius="16dp"
             app:cardElevation="8dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp">
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/levante_stadium"
+                    android:src="@drawable/levante_coach"
                     android:contentDescription="Levante Stadium" />
 
                 <!-- Dark overlay -->
@@ -48,15 +48,41 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/image_overlay" />
 
-                <!-- Coach Photo Placeholder -->
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                <!-- Coach Photo Placeholder - REDUCED SIZE -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
                     android:layout_centerInParent="true"
-                    android:src="@drawable/ic_coach"
-                    android:contentDescription="Coach Photo"
-                    android:background="@drawable/circle_white_bg"
-                    android:padding="20dp" />
+                    app:cardCornerRadius="35dp"
+                    app:cardElevation="6dp"
+                    android:backgroundTint="@android:color/white">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_coach"
+                        android:contentDescription="Coach Photo"
+                        android:padding="12dp"
+                        android:scaleType="centerInside" />
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Coach Title Overlay -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="12dp"
+                    android:text="HEAD COACH"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-medium"
+                    android:shadowColor="@android:color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="3" />
 
             </RelativeLayout>
 
@@ -83,20 +109,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Head Coach"
-                    android:textSize="28sp"
+                    android:textSize="24sp"
                     android:textStyle="bold"
                     android:textColor="@color/levante_dark_blue"
                     android:gravity="center"
-                    android:layout_marginBottom="16dp"
+                    android:layout_marginBottom="12dp"
                     android:fontFamily="sans-serif-medium" />
 
                 <!-- Divider -->
                 <View
-                    android:layout_width="60dp"
+                    android:layout_width="50dp"
                     android:layout_height="3dp"
                     android:layout_gravity="center"
                     android:background="@color/levante_red"
-                    android:layout_marginBottom="20dp" />
+                    android:layout_marginBottom="16dp" />
 
                 <!-- Coach Name -->
                 <TextView
@@ -104,11 +130,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Loading..."
-                    android:textSize="24sp"
+                    android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="@color/text_dark"
                     android:gravity="center"
-                    android:layout_marginBottom="8dp" />
+                    android:layout_marginBottom="6dp" />
 
                 <!-- Coach Position -->
                 <TextView
@@ -116,17 +142,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Loading..."
-                    android:textSize="16sp"
+                    android:textSize="14sp"
                     android:textColor="@color/levante_blue"
                     android:gravity="center"
-                    android:layout_marginBottom="20dp" />
+                    android:layout_marginBottom="16dp" />
 
-                <!-- Coach Details Grid - FIXED ALIGNMENT -->
+                <!-- Coach Details Grid - COMPACT VERSION -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginBottom="16dp"
                     android:baselineAligned="false">
 
                     <!-- Nationality Column -->
@@ -136,34 +162,34 @@
                         android:layout_weight="1"
                         android:orientation="vertical"
                         android:gravity="center"
-                        android:padding="8dp">
+                        android:padding="6dp">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Nationality"
-                            android:textSize="12sp"
+                            android:textSize="11sp"
                             android:textColor="@color/text_gray"
                             android:textStyle="bold"
-                            android:layout_marginBottom="6dp" />
+                            android:layout_marginBottom="4dp" />
 
                         <TextView
                             android:id="@+id/tv_coach_nationality"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Loading..."
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             android:textStyle="bold"
                             android:textColor="@color/text_dark"
                             android:gravity="center"
-                            android:minHeight="20dp" />
+                            android:minHeight="18dp" />
 
                     </LinearLayout>
 
                     <!-- Divider Line -->
                     <View
                         android:layout_width="1dp"
-                        android:layout_height="40dp"
+                        android:layout_height="30dp"
                         android:background="@color/text_gray"
                         android:alpha="0.3"
                         android:layout_gravity="center" />
@@ -175,34 +201,34 @@
                         android:layout_weight="1"
                         android:orientation="vertical"
                         android:gravity="center"
-                        android:padding="8dp">
+                        android:padding="6dp">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Age"
-                            android:textSize="12sp"
+                            android:textSize="11sp"
                             android:textColor="@color/text_gray"
                             android:textStyle="bold"
-                            android:layout_marginBottom="6dp" />
+                            android:layout_marginBottom="4dp" />
 
                         <TextView
                             android:id="@+id/tv_coach_age"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Loading..."
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             android:textStyle="bold"
                             android:textColor="@color/text_dark"
                             android:gravity="center"
-                            android:minHeight="20dp" />
+                            android:minHeight="18dp" />
 
                     </LinearLayout>
 
                     <!-- Divider Line -->
                     <View
                         android:layout_width="1dp"
-                        android:layout_height="40dp"
+                        android:layout_height="30dp"
                         android:background="@color/text_gray"
                         android:alpha="0.3"
                         android:layout_gravity="center" />
@@ -214,27 +240,27 @@
                         android:layout_weight="1"
                         android:orientation="vertical"
                         android:gravity="center"
-                        android:padding="8dp">
+                        android:padding="6dp">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Experience"
-                            android:textSize="12sp"
+                            android:textSize="11sp"
                             android:textColor="@color/text_gray"
                             android:textStyle="bold"
-                            android:layout_marginBottom="6dp" />
+                            android:layout_marginBottom="4dp" />
 
                         <TextView
                             android:id="@+id/tv_coach_experience"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Loading..."
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             android:textStyle="bold"
                             android:textColor="@color/text_dark"
                             android:gravity="center"
-                            android:minHeight="20dp" />
+                            android:minHeight="18dp" />
 
                     </LinearLayout>
 
@@ -263,7 +289,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Biography"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textStyle="bold"
                     android:textColor="@color/levante_dark_blue"
                     android:layout_marginBottom="12dp" />
@@ -273,7 +299,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Loading biography..."
-                    android:textSize="15sp"
+                    android:textSize="14sp"
                     android:textColor="@color/text_gray"
                     android:lineSpacingMultiplier="1.5" />
 
@@ -300,7 +326,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Career Highlights"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textStyle="bold"
                     android:textColor="@color/levante_dark_blue"
                     android:layout_marginBottom="12dp" />
@@ -310,7 +336,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Loading career highlights..."
-                    android:textSize="15sp"
+                    android:textSize="14sp"
                     android:textColor="@color/text_gray"
                     android:lineSpacingMultiplier="1.5" />
 
@@ -336,7 +362,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Coaching Philosophy"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textStyle="bold"
                     android:textColor="@color/levante_dark_blue"
                     android:layout_marginBottom="12dp" />
@@ -346,7 +372,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Loading coaching philosophy..."
-                    android:textSize="15sp"
+                    android:textSize="14sp"
                     android:textColor="@color/text_gray"
                     android:lineSpacingMultiplier="1.5" />
 
