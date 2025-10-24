@@ -19,6 +19,7 @@
 
 Aplikasi **Levante UD Football Club** menampilkan informasi seputar klub sepak bola **Levante Unión Deportiva**, termasuk sejarah klub, data pelatih, serta daftar pemain yang diambil dari **Football-Data.org API**.
 Warna kartu pemain menyesuaikan posisi:
+
 🟡 Goalkeeper
 
 🔵 Defender
@@ -37,6 +38,3 @@ Aplikasi dikembangkan menggunakan **Kotlin**, **Android Studio**, dan menerapkan
 
 
 ---
-
-mau sekalian aku bantu tambahkan *preview ikon aplikasi dan screenshot utama* di bagian bawah README-nya juga biar makin bagus?
-
