@@ -9,9 +9,9 @@
 | Keterangan     | Data                |
 | -------------- | ------------------- |
 | **Nama**       | Aisyah Syifa Karima |
-| **NIM**        | [isi NIM kamu]      |
-| **Shift Baru** | [isi shift baru]    |
-| **Shift Asal** | [isi shift asal]    |
+| **NIM**        | H1D023043           |
+| **Shift Baru** | C                   |
+| **Shift Asal** | C                   |
 
 ---
 
@@ -39,3 +39,4 @@ Aplikasi dikembangkan menggunakan **Kotlin**, **Android Studio**, dan menerapkan
 ---
 
 mau sekalian aku bantu tambahkan *preview ikon aplikasi dan screenshot utama* di bagian bawah README-nya juga biar makin bagus?
+
