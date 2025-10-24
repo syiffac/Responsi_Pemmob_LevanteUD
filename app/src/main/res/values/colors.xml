@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="levante_blue">#1565C0</color>
+    <color name="levante_dark_blue">#0D47A1</color>
+    <color name="levante_red">#D32F2F</color>
+    <color name="levante_green">#388E3C</color>
+    <color name="text_gray">#616161</color>
+    <color name="text_dark">#212121</color>
+    <color name="button_pressed">#F5F5F5</color>
+    
+    <!-- Position Colors -->
+    <color name="goalkeeper_color">#FFC107</color>
+    <color name="defender_color">#2196F3</color>
+    <color name="midfielder_color">#4CAF50</color>
+    <color name="forward_color">#F44336</color>
+</resources>

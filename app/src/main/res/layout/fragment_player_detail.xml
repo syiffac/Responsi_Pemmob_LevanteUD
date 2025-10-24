@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="20dp">
+
+    <!-- Handle drag indicator -->
+    <View
+        android:layout_width="50dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center"
+        android:background="@color/text_gray"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Player Name -->
+    <TextView
+        android:id="@+id/tv_detail_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Matthias Köbbing"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_dark"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Birth Date -->
+    <TextView
+        android:id="@+id/tv_detail_birth_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1997-05-28"
+        android:textSize="16sp"
+        android:textColor="@color/text_gray"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Country -->
+    <TextView
+        android:id="@+id/tv_detail_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Germany"
+        android:textSize="16sp"
+        android:textColor="@color/text_gray"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Position -->
+    <TextView
+        android:id="@+id/tv_detail_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Goalkeeper"
+        android:textSize="16sp"
+        android:textColor="@color/text_gray"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="8dp">
+
+    <!-- Header Title -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Team Squad"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/levante_dark_blue"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Position Filter Buttons Row 1 -->
+    <Button
+        android:id="@+id/btn_goalkeeper"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:text="Goalkeeper"
+        android:textSize="11sp"
+        android:backgroundTint="#FFC107"
+        android:textColor="@android:color/white"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_defender"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <Button
+        android:id="@+id/btn_defender"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:text="Defender"
+        android:textSize="11sp"
+        android:backgroundTint="#2196F3"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="2dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintStart_toEndOf="@id/btn_goalkeeper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <!-- Position Filter Buttons Row 2 -->
+    <Button
+        android:id="@+id/btn_midfielder"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:text="Midfielder"
+        android:textSize="11sp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_goalkeeper"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_forward"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <Button
+        android:id="@+id/btn_forward"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:text="Forward"
+        android:textSize="11sp"
+        android:backgroundTint="#F44336"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="2dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_defender"
+        app:layout_constraintStart_toEndOf="@id/btn_midfielder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <!-- RecyclerView for Players -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_players"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_midfielder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:listitem="@layout/item_player" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
