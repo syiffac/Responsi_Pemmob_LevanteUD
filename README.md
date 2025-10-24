@@ -1,26 +1,41 @@
-﻿# Responsi_Pemmob_LevanteUD
+# 📱 Responsi 1 - Pemrograman Mobile
 
-📱 Responsi 1 - Mobile Programming
-Aplikasi: Levante UD Football Club
+**Aplikasi: Levante UD Football Club**
 
-👤 Identitas
-Keterangan	Data
-Nama	Aisyah Syifa Karima
-NIM	H1D023043
-Shift Baru	C
-Shift Asal	C
+--
 
-🏟️ Deskripsi Aplikasi
-Aplikasi ini merupakan proyek Responsi 1 Pemrograman Mobile yang menampilkan informasi seputar klub sepak bola Levante Unión Deportiva (Levante UD).
-Fitur yang tersedia:
-Halaman utama berisi logo, deskripsi singkat, dan menu navigasi.
-Halaman Club History yang menampilkan sejarah singkat klub.
-Halaman Head Coach yang mengambil data pelatih dari Football-Data.org API.
-Halaman Squad yang menampilkan daftar pemain dengan warna kartu berbeda sesuai posisi:
+## 👤 Identitas
+
+| Keterangan     | Data                |
+| -------------- | ------------------- |
+| **Nama**       | Aisyah Syifa Karima |
+| **NIM**        | [isi NIM kamu]      |
+| **Shift Baru** | [isi shift baru]    |
+| **Shift Asal** | [isi shift asal]    |
+
+---
+
+## 🏟️ Deskripsi Aplikasi
+
+Aplikasi **Levante UD Football Club** menampilkan informasi seputar klub sepak bola **Levante Unión Deportiva**, termasuk sejarah klub, data pelatih, serta daftar pemain yang diambil dari **Football-Data.org API**.
+Warna kartu pemain menyesuaikan posisi:
 🟡 Goalkeeper
-🔵 Defender
-🟢 Midfielder
-🔴 Forward
-Ikon aplikasi juga sudah disesuaikan dengan warna khas klub Levante UD ⚽.
 
-🎬 Video Demo
+🔵 Defender
+
+🟢 Midfielder
+
+🔴 Forward
+
+Ikon aplikasi juga sudah disesuaikan dengan warna khas klub Levante UD ⚽.
+Aplikasi dikembangkan menggunakan **Kotlin**, **Android Studio**, dan menerapkan **ViewBinding** serta **MVVM Architecture**.
+
+---
+
+## 🎬 Video Demo
+
+
+
+---
+
+mau sekalian aku bantu tambahkan *preview ikon aplikasi dan screenshot utama* di bagian bawah README-nya juga biar makin bagus?
